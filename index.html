@@ -11,6 +11,13 @@
     <!-- id는 js 작업할 때, class는 css 작업할 때 쓸거임 -->
     <canvas id="jsCanvas" class="canvas"></canvas>
     <div class="controls">
+        <div class="controls_range">
+            <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" steps="0.1"/>
+        </div>         
+        <div class="controls_btns">
+            <button id="jsMode">Fill</button>
+            <button id="jsSave">Save</button>
+        </div>
         <div id="jsColors" class="controls_colors">
             <div class="controls_color" style="background-color: #2c2c2c;"></div>
             <div class="controls_color" style="background-color:white;"></div>
