@@ -1,0 +1,10 @@
+캔버스 : html의 요소로, context를 가짐
+	-> 이 요소 안에서 픽셀에 접근가능
+	-> manipulating image
+	-> therefore, it creates an image!!
+
+캔버스 요소는 2가지 사이즈를 가져야함
+1. css사이즈
+2. pixel manipulating size
+
+=> 2를 위해 js의 DOM으로도 똑같은 width와 height를 지정해줘야 함
