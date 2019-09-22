@@ -93,8 +93,14 @@ function handleCntextMenu(event) {
     event.preventDefault();
 }
 
-function handleSaveClick() {
-    
+function handleSaveClick() {    //캔버스를 이미지데이터로 처리하여 저장하는 기능을 하는 메소드
+    const image = canvas.toDataURL("image/png");
+    // console.log(image);
+    const link = document.createElement("a");
+    link.href = image; //이미지소스(데이터값) URI
+    link.download = "PaintJS[EXPORT]"; //anchor element의 속성 중 하나임. string형태의 이름을 대입하면 해당 값의 이름으로 저장됨!
+    // console.log(link);
+    link.click();
 }
 
 if(canvas) {
